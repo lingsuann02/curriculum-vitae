@@ -1,3 +1,13 @@
+#navigation-component a {
+    color: white;
+}
+
+#navigation-component a:hover {
+    opacity: 1; 
+    text-decoration: none;
+    color: #FFBC0D !important;
+}
+
 #navigation-component {
     background-color: #1E1E1E;
     display: flex;
@@ -52,7 +62,7 @@
 }
 
 .logo:hover {
-    color: #FF9B00;
+    color: #FFBC0D;
     cursor: pointer;
 }
 

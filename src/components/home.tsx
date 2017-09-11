@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './home.css';
 
 const Home = () => {
     return (
@@ -10,10 +11,11 @@ const Home = () => {
                             Hi! 
                         </p>
                         <p>
-                            My name is Su Ann Ling.
+                            My name is <a href="#about" id="goto-about">Su Ann Ling</a>.
                         </p>
                         <p>
-                            I'm a front end web developer based in Oslo.
+                            I'm a UK <a href="#education" id="goto-education">educated </a>
+                            front end<a href="#work" id="goto-work"> web developer</a> based in Oslo.
                         </p>
                     </div>
                 </div>

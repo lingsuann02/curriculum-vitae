@@ -25,14 +25,13 @@
 
 .controls {
     font-size: 3em;
-    opacity: 0.7;
     cursor: pointer;
     position: relative;
     z-index: 1;
 }
 
 .controls:not(.disabled):hover {
-    color: #FF9B00 !important;
+    color: #FFBC0D !important;
 }
 
 .previous {

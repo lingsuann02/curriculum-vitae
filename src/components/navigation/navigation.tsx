@@ -43,7 +43,7 @@ class Navigation extends React.Component<NavigationProps, NavigationState> {
                 </div>
                 <div>
                 <span className="logo">
-                    <a href="#home">Su Ann Ling</a>
+                    <a href="#home">Curriculum Vitae</a>
                 </span>
                     <span className="nav-menu-button" onClick={() => this.toggleCollapse()}>
                     SL

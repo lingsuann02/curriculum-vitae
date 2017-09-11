@@ -23,12 +23,13 @@
 }
 
 a {
-    color: white;
+    color: #FFBC0D;
 }
 
 a:hover {
+    opacity: 1; 
     text-decoration: none;
-    color: #FF9B00 !important;
+    color: #FFFFFF !important;
 }
 
 #home {
