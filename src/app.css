@@ -21,6 +21,15 @@
     display: flex;
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FF9B00 !important;
+}
+
 #home {
     background-color: green;
     color: white;

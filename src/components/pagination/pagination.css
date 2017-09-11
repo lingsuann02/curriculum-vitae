@@ -7,16 +7,15 @@
 .page {
     padding: 0 10px 0 0;
     cursor: pointer;
-    opacity: 0.4;
+    opacity: 0.7;
 }
 
 .page.active {
-    opacity: 0.7;
+    opacity: 1;
     font-size: 1.5em;
 }
 
 .page:hover {
-    opacity: 1;
     font-size: 1.5em;
 }
 
@@ -28,22 +27,12 @@
     font-size: 3em;
     opacity: 0.7;
     cursor: pointer;
-    /*  */
-    postion: relative;
+    position: relative;
     z-index: 1;
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    -moz-transition: -moz-transform 0.5s ease-in-out;
-    -o-transition: -o-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
 }
 
 .controls:not(.disabled):hover {
-    opacity: 1;
-    /*  */
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transform: scale(1.5);
+    color: #FF9B00 !important;
 }
 
 .previous {
@@ -56,6 +45,6 @@
 
 .next.disabled,
 .previous.disabled {
-    opacity: 0.2;
+    opacity: 0.4;
     cursor: auto;
 }

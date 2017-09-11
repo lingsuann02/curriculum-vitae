@@ -9,7 +9,6 @@
 
 #navigation-component {
     overflow-y: hidden;
-    /*max-height: 3em;*/
     transition-property: all;
     transition-duration: .5s;
     transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
@@ -29,7 +28,6 @@
 
 #navigation-component .nav {
     justify-content: space-around;
-    /*min-height: 3em;*/
 }
 
 #navigation-component a {
@@ -38,15 +36,6 @@
     align-items: center;
     padding: 10px 5px;
     margin: auto;
-}
-
-a {
-    color: white;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #FF9B00;
 }
 
 .logo {

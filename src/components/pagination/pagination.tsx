@@ -32,11 +32,11 @@ class Pagination extends React.Component<PaginationProps, object> {
                     {
                         this.props.items.map((item, i) => {
                             return (
-                                <span key={'page-' + i}
+                                <a key={'page-' + i}
                                       className={(i === this.props.currentIndex) ? 'active page' : 'page'}
                                       onClick={() => this.pageTo(i)}>
-                            {i + 1}
-                        </span>
+                                    {i + 1}
+                                </a>
                             );
                         })
                     }
