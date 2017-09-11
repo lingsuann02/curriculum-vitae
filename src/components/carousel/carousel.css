@@ -1,0 +1,12 @@
+.carousel-component {
+    display: flex;
+}
+
+.seat {
+    display: none;
+    align-items: center;
+}
+
+.seat.active {
+    display: flex;
+}

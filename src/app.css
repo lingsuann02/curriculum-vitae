@@ -1,0 +1,64 @@
+.area-block {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.header-emphasized {
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.sub-header {
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+.carousel {
+    height: 70vh;
+    overflow: scroll;
+    display: flex;
+}
+
+#home {
+    background-color: green;
+    color: white;
+    font-size: 3em;
+}
+
+#work {
+    background-color: red;
+    color: white;
+}
+
+#skills {
+    background-color: purple;
+    color: white;
+}
+
+#education {
+    background-color: yellow;
+}
+
+#about {
+    background-color: pink;
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 60%;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 60%;
+    }
+}

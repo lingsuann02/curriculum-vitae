@@ -1,0 +1,75 @@
+#navigation-component {
+    background-color: #1E1E1E;
+    display: flex;
+}
+
+#navigation-component.collapsed {
+    max-height: 0;
+}
+
+#navigation-component {
+    overflow-y: hidden;
+    max-height: 3em;
+    /* approximate max height */
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+@-webkit-keyframes slide {
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes slide {
+    100% {
+        top: 0;
+    }
+}
+
+#navigation-component .nav {
+    justify-content: space-around;
+    line-height: 3em;
+}
+
+#navigation-component a {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FF9B00;
+}
+
+.logo {
+    margin-left: 15px;
+    font-size: 3em;
+}
+
+.logo:hover {
+    color: #FF9B00;
+    cursor: pointer;
+}
+
+.nav-menu-button {
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 3em;
+    float: right;
+}
+
+.nav-menu-button>i {
+    font-size: 1.8em;
+    position: relative;
+    top: -0.5em;
+}
+
+.nav-menu-button:hover {
+    color: white;
+}
