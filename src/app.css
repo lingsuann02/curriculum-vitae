@@ -1,5 +1,5 @@
 .area-block {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     padding-top: 80px;
@@ -16,7 +16,7 @@
 }
 
 .carousel {
-    height: 70vh;
+    min-height: 70vh;
     overflow: scroll;
     display: flex;
 }
