@@ -2,15 +2,15 @@ import * as React from 'react';
 import Carousel from './carousel/carousel';
 import Pagination from './pagination/pagination';
 
-interface EducationProps {
+interface EducationState {
     educationItems: Array<object>;
     currentIndex: number;
     speed: number;
 }
 
-class Education extends React.Component<object, EducationProps> {
+class Education extends React.Component<object, EducationState> {
 
-    constructor(props: EducationProps) {
+    constructor(props: EducationState) {
         super(props);
 
         const masters = (
