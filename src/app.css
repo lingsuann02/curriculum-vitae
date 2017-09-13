@@ -53,6 +53,10 @@ a:hover {
     background-color: #34BCFF;
 }
 
+#tic-tac-toe {
+    background-color: #0A56E8;    
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     html {

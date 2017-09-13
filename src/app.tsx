@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Navigation from './components/navigation/navigation';
+import TicTacToeApp from './components/tic-tac-toe/app';
 import Home from './components/home';
 import Work from './components/work';
 import Skills from './components/skills';
@@ -17,6 +18,7 @@ const App = () => {
                 <Skills />
                 <Education />
                 <About />
+                <TicTacToeApp />
             </div>
         </div>
     );

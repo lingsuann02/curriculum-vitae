@@ -36,6 +36,7 @@ class Navigation extends React.Component<NavigationProps, NavigationState> {
                                     <a className="" href="#skills">Skills</a>
                                     <a className="" href="#education">Education</a>
                                     <a className="" href="#about">About</a>
+                                    <a className="" href="#tic-tac-toe">Tic Tac Toe</a>
                                 </nav>
                             </div>
                         </div>
