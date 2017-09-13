@@ -2,19 +2,19 @@
 }
 
 .game-board {
-    width: 64vh;
-    height: 64vh;
+    width: 49vh;
+    height: 49vh;
     margin: auto;
     /* display: flex;
     justify-content: space-between; */
 }
 
 .game-title {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .game-status {
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 .game-restart {
@@ -36,8 +36,8 @@
 }
 
 .square {
-    width: 20vh;
-    height: 20vh;
+    width: 15vh;
+    height: 15vh;
     float: left;
     display: flex;
     justify-content: center;
@@ -46,8 +46,8 @@
 }
 
 .square .marked {
-    line-height: 20vh;
-    font-size: 20vh;
+    line-height: 15vh;
+    font-size: 15vh;
     display: flex;
     align-items: center;
 }
