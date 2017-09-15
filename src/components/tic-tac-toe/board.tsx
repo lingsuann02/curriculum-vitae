@@ -145,7 +145,7 @@ export default class BoardComponent extends React.Component<object, Board> {
         let strongestHumanCombination = this.checkBoard(this.state.human);
         let strongestBotCombination = this.checkBoard(this.state.bot);
     
-        if (strongestBotCombination.score >= strongestBotCombination.score) {
+        if (strongestBotCombination.score >= strongestHumanCombination.score) {
           return strongestBotCombination;
         }
         return strongestHumanCombination;
@@ -174,29 +174,28 @@ export default class BoardComponent extends React.Component<object, Board> {
         let highestScore = 0;
     
         for (let i = 0; i < this.state.winningCombinations.length; i++) {
-            let score = 0;
-        
-            if (this.state.squares[this.state.winningCombinations[i][0]].occupiedBy === player) {
-                score++;
-            }
-            // don't bother working out the rest of the score as the player can't win with this row
+            let score = 0;        
+            // don't bother working out the rest of the score as the player can't win with this row 
             if (this.state.squares[this.state.winningCombinations[i][0]].occupiedBy 
                 && this.state.squares[this.state.winningCombinations[i][0]].occupiedBy !== player) {
                 continue;
             }
-            if (this.state.squares[this.state.winningCombinations[i][1]].occupiedBy === player) {
+            if (this.state.squares[this.state.winningCombinations[i][0]].occupiedBy === player) {
                 score++;
             }
             if (this.state.squares[this.state.winningCombinations[i][1]].occupiedBy 
                 && this.state.squares[this.state.winningCombinations[i][1]].occupiedBy !== player) {
                 continue;
             }
-            if (this.state.squares[this.state.winningCombinations[i][2]].occupiedBy === player) {
+            if (this.state.squares[this.state.winningCombinations[i][1]].occupiedBy === player) {
                 score++;
             }
             if (this.state.squares[this.state.winningCombinations[i][2]].occupiedBy 
                 && this.state.squares[this.state.winningCombinations[i][2]].occupiedBy !== player) {
                 continue;
+            }
+            if (this.state.squares[this.state.winningCombinations[i][2]].occupiedBy === player) {
+                score++;
             }
         
             if (score > highestScore) {
